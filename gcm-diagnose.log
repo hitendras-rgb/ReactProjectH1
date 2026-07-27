@@ -1,0 +1,218 @@
+﻿Diagnose log at 2026-07-27T11:11:25Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.9.0+194ba290ce533465310d50f811684ab180536ae7
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19045)
+Reading environment variables... OK
+ Variables:
+OneDriveConsumer=C:\Users\cis\OneDrive
+ProgramFiles(x86)=C:\Program Files (x86)
+MSYSTEM=MINGW64
+ProgramW6432=C:\Program Files
+GIT_TRACE=1
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Pro
+TMP=C:\Users\cis\AppData\Local\Temp
+PROCESSOR_ARCHITECTURE=AMD64
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\cis\bin;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PowerShell\7\;C:\Program Files\Git\cmd;C:\Users\cis\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Microsoft VS Code\bin;C:\Users\cis\AppData\Local\Microsoft\WindowsApps;C:\Users\cis\AppData\Local\GitHubDesktop\bin;C:\Users\cis\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\cis\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\cis\GitHubDesktop\bin;C:\Users\cis\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\cis\.dotnet\tools;C:\Users\cis\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cis\AppData\Roaming\npm;C:\Users\cis\AppData\Local\Yarn\bin
+GIT_CURL_VERBOSE=1
+USERDOMAIN=CISM-I-302
+PROCESSOR_REVISION=3c03
+TMPDIR=C:\Users\cis\AppData\Local\Temp
+ChocolateyLastPathUpdate=Tue Apr  3 20:37:14 2018
+USERPROFILE=C:\Users\cis
+LOGONSERVER=\\CISM-I-302
+TEMP=C:\Users\cis\AppData\Local\Temp
+USERNAME=cis
+SystemRoot=C:\WINDOWS
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+PLINK_PROTOCOL=ssh
+C:\Users\cis\AppData\Local\Temp=TMP
+USERDOMAIN_ROAMINGPROFILE=CISM-I-302
+CommonProgramFiles=C:\Program Files\Common Files
+ProgramData=C:\ProgramData
+LC_CTYPE=C.UTF-8
+HOMEPATH=\Users\cis
+COMPUTERNAME=CISM-I-302
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramW6432=C:\Program Files\Common Files
+TERM=xterm-256color
+SESSIONNAME=Console
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+windir=C:\WINDOWS
+GIT_TRACE2_PARENT_SID=d37b8ab5-2b96-4fac-a216-d7a1b56a3af4
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=4
+OS=Windows_NT
+ProgramFiles=C:\Program Files
+ComSpec=C:\WINDOWS\system32\cmd.exe
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.RB;.RBW
+HOME=C:\Users\cis
+PROMPT=$P$G
+NVM_SYMLINK=C:\Program Files\nodejs
+APPDATA=C:\Users\cis\AppData\Roaming
+OneDrive=C:\Users\cis\OneDrive
+PROCESSOR_LEVEL=6
+asl.log=Destination=file
+LOCALAPPDATA=C:\Users\cis\AppData\Local
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+COLORTERM=truecolor
+PUBLIC=C:\Users\Public
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\cis\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\cis\AppData\Local\Temp\16f64215b42e3f8dfa6aa5e0'... OK
+Reading from temporary file 'C:\Users\cis\AppData\Local\Temp\16f64215b42e3f8dfa6aa5e0'... OK
+Deleting temporary file 'C:\Users\cis\AppData\Local\Temp\16f64215b42e3f8dfa6aa5e0'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\cis
+UserDataDirectoryPath: C:\Users\cis\.gcm
+GetCurrentDirectory(): H:\HITENDRA\Hitendra\STUDY\React
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: False
+Exception:
+System.Configuration.ConfigurationErrorsException: Configuration system failed to initialize ---> System.Configuration.ConfigurationErrorsException: Unrecognized configuration section startup. (C:\Program Files\Git\mingw64\bin\git-credential-manager.exe.Config line 3)
+   at System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   at System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   at System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   --- End of inner exception stack trace ---
+   at System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   at System.Configuration.ClientConfigurationSystem.PrepareClientConfigSystem(String sectionName)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.PrivilegedConfigurationManager.GetSection(String sectionName)
+   at System.Diagnostics.DiagnosticsConfiguration.GetConfigSection()
+   at System.Diagnostics.DiagnosticsConfiguration.Initialize()
+   at System.Diagnostics.DiagnosticsConfiguration.get_Sources()
+   at System.Diagnostics.TraceSource.Initialize()
+   at System.Net.Logging.InitializeLogging()
+   at System.Net.Logging.get_On()
+   at System.Net.Http.HttpMessageHandler..ctor()
+   at System.Net.Http.HttpClientHandler..ctor()
+   at GitCredentialManager.HttpClientFactory.CreateClient()
+   at GitCredentialManager.Diagnostics.NetworkingDiagnostic.<RunInternalAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitCredentialManager.Diagnostics.Diagnostic.<RunAsync>d__6.MoveNext()
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client...
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.55.0.windows.3'
+Locating current repository...Git repository at 'H:/HITENDRA/Hitendra/STUDY/React/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/cis/.gitconfig	user.email=hitendras-rgb@github.com
+file:C:/Users/cis/.gitconfig	user.name=Hitendra Singh Thakur
+file:C:/Users/cis/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/cis/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/cis/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/cis/.gitconfig	filter.lfs.required=true
+file:C:/Users/cis/.gitconfig	credential.https://git.cisin.com.provider=generic
+file:C:/Users/cis/.gitconfig	http.sslverify=false
+file:C:/Users/cis/.gitconfig	core.filemode=false
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/hitendras-rgb/ReactProjectH1.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\cis\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\cis\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: False
+Exception:
+System.Configuration.ConfigurationErrorsException: Configuration system failed to initialize ---> System.Configuration.ConfigurationErrorsException: Unrecognized configuration section startup. (C:\Program Files\Git\mingw64\bin\git-credential-manager.exe.Config line 3)
+   at System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   at System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   at System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   --- End of inner exception stack trace ---
+   at System.Configuration.ConfigurationManager.PrepareConfigSystem()
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at System.Configuration.PrivilegedConfigurationManager.GetSection(String sectionName)
+   at System.Net.Configuration.SettingsSectionInternal.get_Section()
+   at System.Net.Http.HttpClientHandler..ctor()
+   at GitCredentialManager.HttpClientFactory.CreateClient()
+   at GitHub.GitHubRestApi.get_HttpClient()
+   at GitHub.GitHubRestApi.<GetMetaInfoAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Diagnostics.GitHubApiDiagnostic.<RunInternalAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitCredentialManager.Diagnostics.Diagnostic.<RunAsync>d__6.MoveNext()
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint...
